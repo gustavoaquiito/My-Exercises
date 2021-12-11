@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    margin: 0%;
+}
+
+.button {
+    padding: 15px;
+    background-color: #333;
+    color: #eee;
+    border: none;
+}
+
+.relative {
+    position: relative;
+    border: 3px solid black;
+    height: 500px;
+}
+
+.relative .absolute {
+    position: absolute;
+    bottom: 0;
+}
+
+.relative .absolute h1 {
+    margin: 0%;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+.main-navbar {
+    background-color: #333;
+    color: #eee;
+    padding: 1px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+}
+
+/* FIXED BUTTON */
+.fixed-button {
+    background-color: #333;
+    color: #eee;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+/* Categories */
+.categories ul {
+    list-style: none;
+}
+
+.categories ul li:first-child{
+    color: red;
+}
+
+.categories ul li:last-child {
+    color: rgb(67, 40, 165);
+}
+
+.categories ul li:nth-child(3) {
+    color: rosybrown;
+}
+
+.categories ul li:nth-child(even){
+    color: sienna;
+}
+header {
+    background-color: #333;
+    color: #eee;
+    width: 80%;
+
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    /* Mesma coisa que acima*/
+    margin: auto;
+
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    /* Mesma coisa que acima*/
+    padding: 20px; 
+
+    border-top: 3px solid red;
+    border-right: 3px solid red;
+    border-bottom: 3px solid red;
+    border-left: 3px solid red;
+    /* Mesma coisa que acima*/
+    border: 10px solid red;
+}
+
+main {
+    align-items: var();
+}
+
+aside ul {
+    list-style: none;
+    text-align: center;
+    padding: 0%;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+aside a:visited {
+    color: rgb(235, 37, 129);
+}
+
+/* Formulários */
+form {
+    padding-left: 20px;
+}
+
+form .forrm-group {
+    padding-bottom: 10px;
+}
+
+form .forrm-group label {
+    display: block;
+}
+
+form .forrm-group input{
+    padding: 10px;
+    width: 100%;
+}
+
