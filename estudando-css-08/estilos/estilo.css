@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'v8';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 5px 0px;
+    line-height: 27.22px;
+    font-size: 1.1rem;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+strong {
+    color: var(--cor4);
+}
+
+/* variáveis */
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, verdana, helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue';
+    --fonte-android: 'v8';
+
+}
+
+/* classes úteis */
+.titulo-destaque {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 25px;
+}
+
+.longo {
+    grid-column: 1/-1;
+}
+/* estrutura */
+.estrutura{
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-areas: 
+    "header header header"
+    ". main ."
+    "footer footer footer"
+    ;
+
+    
+}
+
+@media (min-width: 800px) {
+        .estrutura {
+            display: grid;
+        }
+    }
+/* header */
+.header {
+    grid-area: header;
+    background-image: linear-gradient(to bottom, var(--cor3),  var(--cor5));
+    padding: 5px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.236);
+}
+
+.titulo_principal {    
+    color: white;
+    font-size: 1.2rem;  
+    text-align: center;
+    margin: 0px auto;
+    padding: 30px;
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 53%);
+}
+
+.titulo_principal h1{
+    font-family: var(--fonte-destaque);
+}
+
+.navbar {
+    border-color: var(--cor3);
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-size: 17px;
+    padding: 10px;
+    background-color: rgb(44, 44, 44, 0.1);
+    border-radius: 6px;
+    transition: 0.1s;
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(44, 44, 44, 0.6);
+}
+
+
+/* main */
+.main {
+    grid-area: main;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.236);
+}
+
+@media (max-width: 742px) {
+    .main {
+       display: block; 
+    }
+}
+.main p {
+    text-indent: 30px;
+}
+
+.main a {
+    padding: 2px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+
+.main a::after {
+    content: "🔗";
+}
+
+.video {
+    background-color: var(--cor5);
+    margin: 0px -30px 0px -30px;
+    height: 440px;
+    position: relative;
+}
+
+.video-0 {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 80%;
+    height: 90%;
+}
+
+/* aside */
+.aside {
+    margin: 30px -20px 0px -20px;
+    background-color: var(--cor1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.aside h3{
+    background-color: var(--cor4);
+    color: white;
+    font-size: 26px;
+    padding: 10px;
+    margin: -30px -30px 0px -30px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.aside ul {
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+}
+
+@media (max-width: 396px) {
+    .aside ul {
+        columns: 1;
+    }
+}
+
+/* footer */
+.footer {
+    grid-area: footer;
+    padding: 5px;
+    background-color: var(--cor5);
+    margin-top: 20px;
+}
+
+.footer p {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
