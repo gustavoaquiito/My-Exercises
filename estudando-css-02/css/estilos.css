@@ -75,6 +75,16 @@ body {
     border-right: 1px solid white;
 }
 
+@media (max-width: 1056px) {
+    .logo {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #navbar .navbar-container ul li {
+        margin: 0 auto;
+    }
+}
 /* showcase */
 
 #showcase {
@@ -139,6 +149,7 @@ body {
     color: #919496;
     font-size: 11px;
 }
+
 
 /* Footer-socials */
 .socials {
