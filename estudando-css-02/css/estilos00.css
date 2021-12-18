@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -14,6 +19,10 @@ img {
 p {
     line-height: 22.2px;
 }
+
+li {
+    list-style: none;
+}
 :root {
     --cor1: rgba(0, 0, 0, 0.6);
     --cor2: #1db954;
@@ -21,11 +30,10 @@ p {
     --cor-hover: #1ed760;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+/* últeis  */
+.logo {
+    width: 140px;
+    display: block;
 }
 
 a,
@@ -34,199 +42,43 @@ a:active,
 a:link,
 a:visited {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-/* Class Úteis*/
-.logo {
-    height: 50px;
-    padding: 10px 10px
+/* header */
+header li + li {
+    margin-left: 20px;
 }
-/*Navbar*/
 
 .header {
     background-color: var(--cor1);
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
-.nav-c {
-    max-width: 1000px;
-    margin: 0 auto;
+.header_c {
+    max-width: 60%;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0px;
+    padding: 20px 0px;
 }
 
-.nav-items {
+.header-items {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
 }
 
-.nav-item a{
-    color: white;
+.header_item {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 0px 20px;
 }
 
-.nav-item:nth-child(3){
-    border-right: 1px solid white;
+.header-items .header_item a {
+    transition: 0.4s;
 }
-
-/* main */
-.main {
-    background: url(/img/showcase.webp) center center/cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: color;
-    height: 100vh;
-}
-
-.main-c {
-    max-width: 1000px;
-    height: 100vh;
-    flex-direction: column;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: white;
-}
-
-.main-titulo {
-    font-size: 3.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.main-discricao {
-    font-size: 14px;
-    text-align: center;
-}
-.p {
-    text-align: center;
-}
-.main-button {
-    width: 300px;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    background-color: var(--cor2);
-}
-
-.main-button a {
-    color: white;
-}
-
-/*footer*/ 
-
-.footer {
-    background-color: black;
-    padding: 30px 0px;
-}
-
-.footer-logo {
-    margin: 20px auto;
-    height: 60px;
-}
-
-.footer-c {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    color: white;
-}
-.footer-items {
-    margin: 0 auto;
-    padding: 0px 5px;
-}
-.footer-items ul{
-    list-style: none;
-}
-
-.item-p {
-    font-size: 12px;
-    font-weight: bold;
-    color: var(--cor3);
-}
-
-.footer-item {
-    padding: 10px 5px;
-    font-size: 15px;
-}
-
-.socials {  
-    font-size: 30px;
-}
-
-.socials i{
-    padding: 0px 10px;
-}
-
-@media (max-width: 400px){
-    .footer-items {
-        width: 100px;
-    }
-    .item-p {
-        font-size: 10px;
-        font-weight: bold;
-        color: var(--cor3);
-    }
-    .footer-item {
-        padding: 10px 5px;
-        font-size: 12px;
-    }
-}
-
-/* footer-end */
-
-.footer-end {
-    padding-top: 90px;
-    display: flex;
-    flex-wrap: wrap;
-    color: wheat;
-    max-width: 1000px;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-.footer-end-items {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.footer-end-item {
-    font-size: 14px;
-    color: var(--cor3);
-    padding: 0px 10px;
-}
-
-.brand {
-    margin-left: 10px;
-    color: var(--cor3);
-    display: flex;
-    justify-content: flex-end;
-}
-.logo-br {
-    display: inline-block;
-    margin-left: 10px;
-    height: 20px;
-    width: 30px;
-}
-
-@media (max-width: 400px){
-    .footer-end-item {
-        font-size: 12px;
-        color: var(--cor3);
-        padding: 5px 10px;
-    }
-    .brand {
-        font-size: 12px;
-    }
+.header_item a:hover {
+    color: var(--cor-hover);
 }

@@ -131,17 +131,18 @@ img {
     display: flex;
     margin: 0px auto;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section-flex .section_c {
-    max-width: 920px;
-    margin: 0 auto;
+    max-width: 60rem;
+    margin: 0 auto; 
 }
 
 .section-flex .section_c ul li{
     list-style: none;
     background-color: white;
-    margin: 0px auto 0px auto;
+    margin: 0px 10px 0px 10px;
     text-align: center;
     max-width: 290px;
     height: 500px;
@@ -159,7 +160,7 @@ img {
     margin: 0px 10px 0px 10px;
 }
 
-@media (max-width: 929px) {
+@media (max-width: 989px) {
     .section-flex .section_c ul li {
         margin-top: 20px;
     }
