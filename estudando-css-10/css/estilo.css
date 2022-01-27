@@ -41,7 +41,7 @@ p {
 
 .estrutura {
     display: grid;
-    grid-template-columns: 1fr 3fr ;
+    grid-template-columns: minmax(200px, 20%) 3fr ;
     grid-template-areas: 
     "header header"
     "aside main"
@@ -58,6 +58,7 @@ p {
     align-items: center;
     padding: 5px;
     background-image: linear-gradient(135deg, #724236, rgb(149, 93, 93));
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.100);
 }
 
 .logo {
@@ -87,10 +88,37 @@ p {
 .items li {
     margin: 0px 10px;
 }
+
+/* nav */
+.nav {
+    grid-area: aside;
+    padding: 30px;
+}
+
+.nav-item{
+    display: block;
+    max-width: 150px;
+    min-width: 100px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.144);
+}
+
+
+.nav-sub ul {
+    list-style: none;
+}
+
+.nav-sub ul li + li {
+    margin-top: 10px;
+}
+
 /* main */
 
 .main {
-    display: none;
+    grid-area: main;
+    padding: 30px;
 }
 
 .main p {
@@ -100,4 +128,18 @@ p {
 
 .main p + p {
     padding-top: 40px;
+}
+
+/* footer */
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    background-image: linear-gradient(135deg, #724236, rgb(149, 93, 93));
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.52);
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }
