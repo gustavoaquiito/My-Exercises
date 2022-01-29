@@ -56,14 +56,11 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 15px;
     background-image: linear-gradient(135deg, #724236, rgb(149, 93, 93));
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.100);
 }
 
-.logo {
-    width: 290px;
-}
 
 .items {
     display: flex;
@@ -73,11 +70,11 @@ p {
 .item {
     padding: 15px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.123);
     border-radius: 10px;
-    transition: 0.1s;
+    transition: 0.1s ease-out;
 }
 
 .item:hover {
@@ -102,8 +99,12 @@ p {
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.144);
+    transition: 0.1s ease-out;
 }
 
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.123);
+}
 
 .nav-sub ul {
     list-style: none;
@@ -133,6 +134,7 @@ p {
 .footer {
     grid-area: footer;
     padding: 10px;
+    margin-top: 10px;
     background-image: linear-gradient(135deg, #724236, rgb(149, 93, 93));
     box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.52);
 }

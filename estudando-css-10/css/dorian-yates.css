@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: url();
 }
 li {
     text-decoration: none;
@@ -14,15 +13,9 @@ img {
 }
 
 p {
-    line-height: 1.6rem;
+    line-height: 1.9rem;
 }
-
 
 .container-s {
-    padding: 20px 20px 0px 20px;
-}
-
-
-.container-s p + p {
-    margin-top: 20px;
+    padding: 20px;
 }
