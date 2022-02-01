@@ -110,8 +110,8 @@ p {
     list-style: none;
 }
 
-.nav-sub ul li + li {
-    margin-top: 10px;
+.nav-sub ul li {
+    margin-bottom: 10px;
 }
 
 /* main */
@@ -143,4 +143,44 @@ p {
     color: white;
     text-align: center;
     font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .estrutura {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+
+    .nav {
+        padding: 10px;
+        overflow: auto;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    .nav-sub ul li {
+        margin: 10px;
+    }
+
+    .nav-item img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 440px) {
+    .item {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .items li {
+        margin: 0px 2px;
+    }
+
 }
