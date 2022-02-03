@@ -130,6 +130,11 @@ p {
     padding-top: 40px;
 }
 
+.creditos {
+    color: #551a8b;
+    text-decoration: underline;
+}
+
 /* footer */
 .footer {
     grid-area: footer;

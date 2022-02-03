@@ -19,3 +19,9 @@ p {
 .container-s {
     padding: 20px 20px 0px 20px;
 }
+
+.credito {
+    display: inline-block;
+    width: 95%;
+    text-align: right;
+}

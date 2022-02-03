@@ -25,3 +25,9 @@ p {
 .container-s p + p {
     margin-top: 20px;
 }
+
+.credito {
+    display: inline-block;
+    width: 95%;
+    text-align: right;
+}
