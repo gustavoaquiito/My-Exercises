@@ -61,6 +61,14 @@ p {
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.100);
 }
 
+.header-logo {
+    flex: 1 1 260px;
+}
+
+.logo {
+    width: 300px;
+}
+
 
 .items {
     display: flex;
@@ -150,6 +158,7 @@ p {
     font-weight: bold;
 }
 
+/* media screen */
 @media (max-width: 750px) {
     .estrutura {
         grid-template-columns: 1fr;
@@ -188,4 +197,10 @@ p {
         margin: 0px 2px;
     }
 
+}
+
+@media (max-width: 697px) {
+    .logo {
+        margin: 0px auto;
+    }
 }
