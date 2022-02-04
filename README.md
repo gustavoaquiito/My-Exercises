@@ -11,4 +11,4 @@
 (https://gustavoaquiito.github.io/My-Exercises/estudando-css-07/index.html)
 (https://gustavoaquiito.github.io/My-Exercises/estudando-css-08/index.html)
 (https://gustavoaquiito.github.io/My-Exercises/estudando-css-09/index.html)
-(https://gustavoaquiito.github.io/My-Exercises/estudando-css-10/fisiculturismo.html)
+(https://gustavoaquiito.github.io/My-Exercises/estudando-css-10/fisiculturismo .html)
